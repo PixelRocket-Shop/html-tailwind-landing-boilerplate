@@ -1,0 +1,22 @@
+[
+  {
+    "label": "About",
+    "url": "#about"
+  },
+  {
+    "label": "Features",
+    "url": "#features"
+  },
+  {
+    "label": "Pricing",
+    "url": "#pricing"
+  },
+  {
+    "label": "Testimonials",
+    "url": "#testimonials"
+  },
+  {
+    "label": "FAQs",
+    "url": "#faq"
+  }
+]

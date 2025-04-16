@@ -1,0 +1,61 @@
+/* default border color */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+/* customise container utility */
+@utility container {
+  margin-inline: auto;
+  @apply ps-4 pe-4 sm:ps-6 sm:pe-6 md:ps-8 md:pe-8;
+}
+
+/* Remove this - only applied to empty boilerplate to allow scrolling on menu click! */
+.container:not(header .container) {
+  @apply py-32;
+}
+
+@theme {
+  /* how to customise default font stack */
+  --font-sans: 'Satoshi', sans-serif;
+
+  /* example of how to customise default color palette */
+  --color-gray-50: oklch(98.42% 0.003 247.86);
+  --color-gray-100: oklch(96.83% 0.007 247.9);
+  --color-gray-200: oklch(92.88% 0.013 255.51);
+  --color-gray-300: oklch(86.9% 0.02 252.89);
+  --color-gray-400: oklch(71.07% 0.035 256.79);
+  --color-gray-500: oklch(55.44% 0.041 257.42);
+  --color-gray-600: oklch(44.55% 0.037 257.28);
+  --color-gray-700: oklch(37.17% 0.039 257.29);
+  --color-gray-800: oklch(27.95% 0.037 260.03);
+  --color-gray-900: oklch(20.77% 0.04 265.75);
+  --color-gray-950: oklch(12.96% 0.027 261.69);
+}
+
+/* example of how to customise the typography plugin settings */
+.prose-gray {
+  --tw-prose-headings: var(--color-gray-950);
+  --tw-prose-body: var(--color-gray-800);
+}
+
+/* dark mode styling example - uncomment if you want to use dark mode */
+/* @media (prefers-color-scheme: dark) {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-800, currentColor);
+  }
+
+  .prose-gray {
+    --tw-prose-headings: var(--color-gray-200);
+    --tw-prose-body: var(--color-gray-300);
+  }
+} */

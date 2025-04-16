@@ -1,0 +1,51 @@
+<dialog
+  id="modal"
+  aria-labelledby="modal-title"
+  aria-describedby="modal-description"
+  data-modal
+  class="fixed z-[999]"
+>
+  <div
+    class="modal-content bg-gray-950 justify-between gap-20 p-12 sm:p-20 flex flex-col h-full overflow-y-auto"
+  >
+    <div class="flex items-center justify-between gap-4">
+      <a
+        href="#"
+        class="w-14 sm:w-20 flex flex-shrink-0 transition-opacity hover:opacity-75 duration-300"
+        aria-label="Home"
+      >
+        {{> logo }}
+      </a>
+      <button
+        data-modal-close
+        class="text-gray-100 transition-colors duration-300 hover:text-gray-300 cursor-pointer z-10 flex modal-close"
+      >
+        <span class="sr-only">Close modal</span>
+        <span class="w-12">{{> icons/close }}</span>
+      </button>
+    </div>
+    <nav class="bg-gray-950 text-white" data-modal-menu>
+      <ul class="not-prose grid gap-10">
+        {{#each menu}}
+        <li>
+          <a
+            href="{{ url }}"
+            class="text-4xl font-bold transition-colors duration-300 hover:text-white/75 text-white no-underline"
+            >{{ label }}</a
+          >
+        </li>
+        {{/each}}
+      </ul>
+    </nav>
+    <div class="text-white/50 mobile-copyright">
+      <p class="!m-0">
+        &copy; 2024 All rights reserved | Made with ❤️ by
+        <a
+          class="underline text-white/50 transition-colors duration-300 hover:text-white"
+          href="https://pixelrocket.store"
+          >Pixel Rocket</a
+        >
+      </p>
+    </div>
+  </div>
+</dialog>

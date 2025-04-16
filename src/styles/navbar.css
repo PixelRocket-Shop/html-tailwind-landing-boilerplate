@@ -1,0 +1,13 @@
+@layer components {
+  .navlink {
+    @apply font-medium relative;
+  }
+  .navlink:hover::after {
+    @apply scale-x-100;
+  }
+
+  .navlink::after {
+    @apply absolute w-full h-[2px] bottom-[-10px] left-0 bg-current scale-x-0 origin-center transition-transform duration-300;
+    content: '';
+  }
+}

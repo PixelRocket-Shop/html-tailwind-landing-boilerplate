@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    {{> head title="HTML Tailwind V4 Boilerplate" }}
+  </head>
+  <body class="prose prose-gray max-w-none">
+    {{> header }}
+    <main>
+      <!-- prettier-ignore -->
+      {{> section-hero }} 
+      {{> section-about }} 
+      {{> section-features }} 
+      {{> section-pricing }} 
+      {{> section-faq }} 
+      {{> section-testimonials }} 
+      {{> section-contact }}
+    </main>
+    {{> footer }}
+    <script type="module" src='{{resolve-from-root "../js/main.js"}}'></script>
+  </body>
+</html>

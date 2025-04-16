@@ -1,0 +1,41 @@
+dialog {
+  --modal-transition-in: cubic-bezier(0.65, 0.14, 0.14, 0.91);
+  --modal-transition-out: cubic-bezier(0.98, 0.03, 0.66, 0.9);
+
+  inset: 0;
+  max-width: none;
+  width: 100%;
+  max-height: none;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+
+.modal-close {
+  opacity: 0;
+  transition: opacity var(--modal-transition-out) 0.2s;
+}
+
+.modal-content {
+  transform: translateX(-100%);
+  transition: transform var(--modal-transition-out) 0.4s;
+}
+
+dialog.open .modal-content {
+  transform: translateX(0);
+  transition: transform var(--modal-transition-in) 0.4s;
+}
+
+dialog.open .modal-close {
+  opacity: 1;
+  transition: opacity var(--modal-transition-out) 0.2s 0.7s;
+}
+
+.modal-content {
+  container-type: size;
+  container-name: mobile-menu-left;
+}
+
+dialog::backdrop {
+  background: transparent;
+}

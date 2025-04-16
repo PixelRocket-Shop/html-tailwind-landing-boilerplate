@@ -1,0 +1,21 @@
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-timeline: --page-scroll;
+  }
+
+  .animate-scroll-progress {
+    animation: scrollProgress linear;
+    animation-timeline: --page-scroll;
+    transform-origin: 0 50%;
+  }
+}
+
+
+@keyframes scrollProgress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

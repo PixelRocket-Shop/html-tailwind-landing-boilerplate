@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- here is your favicon. You can update it in the public/images folder -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <!-- this is your custom font. Update/remove this if you want to use a different font-->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- here is your page title. It is passed in as the title prop when you call the partial -->
+    <title>
+      HTML Tailwind V4 Boilerplate
+    </title>
+    <script type="module" crossorigin src="/assets/index-DI3kapvy.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DBknbdWG.css">
+  </head>
+  <body class="prose prose-gray max-w-none">
+    <div
+      class="fixed top-0 left-0 z-[40] shadow bg-gray-950 h-1 w-full animate-scroll-progress"
+    ></div>
+    <header
+      class="border-b py-4 not-prose fixed inset-x-0 bg-white z-30"
+    >
+      <div class="container flex justify-between items-center gap-20">
+        <div class="flex items-center gap-32 flex-grow">
+          <a
+            href="#"
+            class="w-10 grid transition-opacity hover:opacity-75 duration-300 text-gray-950"
+            aria-label="Home"
+          >
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 4C0 1.79086 1.79086 0 4 0H28C30.2091 0 32 1.79086 32 4V28C32 30.2091 30.2091 32 28 32H4C1.79086 32 0 30.2091 0 28V4Z" fill="currentColor"></path>
+              <path d="M23 12.325L20.3054 17.5L15.9973 13.3058L11.6946 17.5L9 12.325L15.9973 5.5L23 12.325Z" fill="white"></path>
+              <path d="M19 21.1954L15.9971 26.5L13 21.1954L15.9971 18.5L19 21.1954Z" fill="white"></path>
+            </svg>
+          </a>
+          <nav aria-label="Main navigation" class="hidden lg:flex">
+            <ul class="flex gap-12 items-center list-none m-0 py-0">
+               <li>
+      <a href="#about" class="navlink">About</a>
+    </li>
+      <li>
+      <a href="#features" class="navlink">Features</a>
+    </li>
+      <li>
+      <a href="#pricing" class="navlink">Pricing</a>
+    </li>
+      <li>
+      <a href="#testimonials" class="navlink">Testimonials</a>
+    </li>
+      <li>
+      <a href="#faq" class="navlink">FAQs</a>
+    </li>
+     
+            </ul>
+          </nav>
+        </div>
+        <a href="#contact" class="btn btn-sm hidden lg:flex" role="button"
+          >Let's Talk</a
+        >
+        <button
+          class="cursor-pointer rounded-full bg-gray-100 text-gray-950 p-4 flex transition-colors duration-300 hover:bg-gray-200 lg:hidden"
+          data-modal-open
+          aria-controls="modal"
+          aria-haspopup="dialog"
+        >
+          <span class="sr-only">Open Mobile Navigation</span>
+          <span class="w-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+    </svg>
+    </span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- prettier-ignore -->
+      <section aria-labelledby="hero-title" class="border-b">
+        <div class="container">
+          Here goes hero content
+        </div>
+      </section>
+      <section
+        id="about"
+        aria-labelledby="about-title"
+        class="scroll-mt-10 border-b"
+      >
+        <div class="container">
+          <h2
+            id="about-title"
+          >
+            About Us
+          </h2>
+          Here goes about content
+        </div>
+      </section>
+      <section
+        id="features"
+        aria-labelledby="features-title"
+        class="scroll-mt-10 border-b"
+      >
+        <div class="container">
+          <h2
+            id="features-title"
+          >
+            Our Features
+          </h2>
+          Here goes features content
+        </div>
+      </section>
+      <section
+        id="pricing"
+        aria-labelledby="pricing-title"
+        class="scroll-mt-10 border-b"
+      >
+        <div class="container">
+          <h2
+            id="pricing-title"
+          >
+            Pricing
+          </h2>
+          Here goes pricing content
+        </div>
+      </section>
+      <section
+        id="faq"
+        aria-labelledby="faq-title"
+        class="scroll-mt-10 border-b"
+      >
+        <div class="container">
+          <h2
+            id="faq-title"
+          >
+            Frequently Asked Questions
+          </h2>
+          Here goes faq content
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        aria-labelledby="testimonials-title"
+        class="scroll-mt-10 border-b"
+      >
+        <div class="container">
+          <h2
+            id="testimonials-title"
+          >
+            Testimonials
+          </h2>
+          Here goes testimonials content
+        </div>
+      </section>
+      <section
+        id="contact"
+        aria-labelledby="contact-title"
+        class="scroll-mt-10 border-b"
+      >
+        <div class="container">
+          <h2
+            id="contact-title"
+          >
+            Contact Us
+          </h2>
+          Here goes contact content
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-950 py-10 text-center text-white/50">
+      <p>
+        &copy; 2024 All rights reserved | Made with ❤️ by
+        <a
+          class="underline text-white/50 transition-colors duration-300 hover:text-white"
+          href="https://pixelrocket.store"
+          >Pixel Rocket</a
+        >
+      </p>
+    </footer>
+    <dialog
+      id="modal"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-description"
+      data-modal
+      class="fixed z-[999]"
+    >
+      <div
+        class="modal-content bg-gray-950 justify-between gap-20 p-12 sm:p-20 flex flex-col h-full overflow-y-auto"
+      >
+        <div class="flex items-center justify-between gap-4">
+          <a
+            href="#"
+            class="w-14 sm:w-20 flex flex-shrink-0 transition-opacity hover:opacity-75 duration-300"
+            aria-label="Home"
+          >
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 4C0 1.79086 1.79086 0 4 0H28C30.2091 0 32 1.79086 32 4V28C32 30.2091 30.2091 32 28 32H4C1.79086 32 0 30.2091 0 28V4Z" fill="currentColor"></path>
+              <path d="M23 12.325L20.3054 17.5L15.9973 13.3058L11.6946 17.5L9 12.325L15.9973 5.5L23 12.325Z" fill="white"></path>
+              <path d="M19 21.1954L15.9971 26.5L13 21.1954L15.9971 18.5L19 21.1954Z" fill="white"></path>
+            </svg>
+          </a>
+          <button
+            data-modal-close
+            class="text-gray-100 transition-colors duration-300 hover:text-gray-300 cursor-pointer z-10 flex modal-close"
+          >
+            <span class="sr-only">Close modal</span>
+            <span class="w-12"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 10.5858L9.17157 7.75736L7.75736 9.17157L10.5858 12L7.75736 14.8284L9.17157 16.2426L12 13.4142L14.8284 16.2426L16.2426 14.8284L13.4142 12L16.2426 9.17157L14.8284 7.75736L12 10.5858Z"
+      ></path>
+    </svg>
+    </span>
+          </button>
+        </div>
+        <nav class="bg-gray-950 text-white" data-modal-menu>
+          <ul class="not-prose grid gap-10">
+            <li>
+              <a
+                href="#about"
+                class="text-4xl font-bold transition-colors duration-300 hover:text-white/75 text-white no-underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="text-4xl font-bold transition-colors duration-300 hover:text-white/75 text-white no-underline"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="text-4xl font-bold transition-colors duration-300 hover:text-white/75 text-white no-underline"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="text-4xl font-bold transition-colors duration-300 hover:text-white/75 text-white no-underline"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="text-4xl font-bold transition-colors duration-300 hover:text-white/75 text-white no-underline"
+                >FAQs</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="text-white/50 mobile-copyright">
+          <p class="!m-0">
+            &copy; 2024 All rights reserved | Made with ❤️ by
+            <a
+              class="underline text-white/50 transition-colors duration-300 hover:text-white"
+              href="https://pixelrocket.store"
+              >Pixel Rocket</a
+            >
+          </p>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
