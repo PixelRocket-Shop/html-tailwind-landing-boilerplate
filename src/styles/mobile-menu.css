@@ -31,11 +31,6 @@ dialog.open .modal-close {
   transition: opacity var(--modal-transition-out) 0.2s 0.7s;
 }
 
-.modal-content {
-  container-type: size;
-  container-name: mobile-menu-left;
-}
-
 dialog::backdrop {
   background: transparent;
 }
