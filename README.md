@@ -172,7 +172,3 @@ This project is open source and licensed under the MIT License.
 You can find my website [here](https://www.pixelrocket.store) for more web development resources and tutorials.
 
 If you have any questions, feel free to email me at [support@pixelrocket.store](mailto:support@pixelrocket.store).
-
-```
-
-```
