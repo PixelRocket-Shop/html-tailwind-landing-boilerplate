@@ -1,0 +1,20 @@
+<section>
+  <div class="container grid gap-6 place-items-center text-center !pb-0 !pt-40">
+    <div class="grid gap-4 place-items-center">
+      {{> subtitle text="Our partners" }} {{> title text="Trusted by teams" }}
+    </div>
+    <p class="max-w-md">
+      From startups to Fortune-scale enterprises, these innovators rely on us to
+      power their marketing.
+    </p>
+    <div
+      class="flex flex-wrap items-center justify-center max-w-2xl gap-4 not-prose"
+    >
+      {{#each @root.logos}}
+      <div class="p-4">
+        <img class="h-8" src="{{logo}}" alt="Logo" />
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

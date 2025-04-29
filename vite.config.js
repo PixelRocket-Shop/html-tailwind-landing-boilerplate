@@ -41,7 +41,7 @@ export default {
       // This is the directory where your partials are located
       partialDirectory: path.resolve(__dirname, 'src/partials'),
       context: loadData(),
-      reloadOnPartialChange: true
+      reloadOnPartialChange: true,
     }),
     watchPartialsPlugin(),
   ],

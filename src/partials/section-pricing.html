@@ -1,10 +1,30 @@
-<section
-  id="pricing"
-  aria-labelledby="pricing-title"
-  class="scroll-mt-10 border-b"
->
-  <div class="container">
-    {{> section-title id="pricing-title" title="Pricing" }}
-    Here goes pricing content
+<div class="text-center grid place-items-center gap-20">
+  <div class="grid gap-3">
+    {{> subtitle text="Our pricing"}}
+    <div class="max-w-xl">
+      {{> title text="Flexible packages for all companies"}}
+    </div>
   </div>
-</section>
+  <div class="grid gap-6 lg:grid-cols-3">
+    {{#each @root.pricing}}
+    <article
+      class="flex flex-col gap-2 items-start text-left bg-gray-50 rounded-xl p-8"
+    >
+      <h3 class="!m-0">{{ package }}</h3>
+      <p class="!m-0">{{ description }}</p>
+      <p class="text-5xl font-bold !my-7">{{ price }}</p>
+      <span class="!m-0 text-xs uppercase font-bold tracking-wider"
+        >What's included</span
+      >
+      {{#if features}}
+      <ul class="list-disc !m-0">
+        {{#each features}}
+        <li>{{ this }}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+      <a href="#" class="btn w-full text-center mt-8">Get started</a>
+    </article>
+    {{/each}}
+  </div>
+</div>

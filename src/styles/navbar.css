@@ -1,6 +1,6 @@
 @layer components {
   .navlink {
-    @apply font-medium relative;
+    @apply font-medium text-base relative;
   }
   .navlink:hover::after {
     @apply scale-x-100;

@@ -1,10 +1,16 @@
-<section
-  id="faq"
-  aria-labelledby="faq-title"
-  class="scroll-mt-10 border-b"
->
-  <div class="container">
-    {{> section-title id="faq-title" title="Frequently Asked Questions" }}
-    Here goes faq content
+<div class="text-center grid place-items-center gap-20">
+  <div class="grid gap-3">
+    {{> subtitle text="Frequently Asked Questions"}}
+    <div class="max-w-2xl">{{> title text="Your questions answered"}}</div>
   </div>
-</section>
+  <div class="grid gap-6 max-w-2xl">
+    {{#each @root.faqs}}
+    <article
+      class="flex flex-col gap-4 items-start text-left bg-gray-50 rounded-xl p-8"
+    >
+      <h3 class="!m-0">{{ question }}</h3>
+      <p class="!m-0">{{ answer }}</p>
+    </article>
+    {{/each}}
+  </div>
+</div>

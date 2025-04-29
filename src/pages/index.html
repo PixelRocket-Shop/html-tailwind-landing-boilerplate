@@ -3,22 +3,15 @@
   <head>
     {{> head title="HTML Tailwind V4 Boilerplate" }}
   </head>
-  <body class="prose prose-gray max-w-none">
+  <body class="prose prose-gray max-w-none text-lg">
     {{> header }}
-    <p>
-      does this    
-      work
-      <dt>test</dt>
-    </p>
     <main>
       <!-- prettier-ignore -->
-      {{> section-hero }} 
-      {{> section-about }} 
-      {{> section-features }} 
-      {{> section-pricing }} 
-      {{> section-faq }} 
-      {{> section-testimonials }} 
-      {{> section-contact }}
+      {{#each sections}}
+        {{#> section-wrapper}}
+          {{> (lookup . "partial") }}
+        {{/section-wrapper}}
+      {{/each}}
     </main>
     {{> footer }}
     <script type="module" src='{{resolve-from-root "../js/main.js"}}'></script>

@@ -1,5 +1,26 @@
-<section aria-labelledby="hero-title" class="border-b">
-  <div class="container">
-    Here goes hero content
+<div class="grid lg:grid-cols-2 gap-32 items-center">
+  <div
+    class="grid gap-6 place-items-center text-center lg:text-left lg:place-items-start"
+  >
+    <!-- prettier-ignore -->
+    <div class="grid gap-3">
+        {{> subtitle text="Ignite Your Brand's Potential"}} 
+        {{> title text="Creative marketing solutions"}}
+     </div>
+    <p class="max-w-md">
+      At Brightwave Marketing, <b>we help businesses stand out</b>, connect with
+      their audiences, and grow faster through powerful, tailored marketing
+      strategies.
+    </p>
+    <a class="btn" href="#about">More About Us</a>
   </div>
-</section>
+  <div>
+    <img
+      class="rounded-xl !m-0"
+      src="/images/hero-img.png"
+      alt="Hero image"
+      loading="lazy"
+    />
+  </div>
+</div>
+{{> logocloud logos=logos }}

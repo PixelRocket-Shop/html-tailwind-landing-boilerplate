@@ -12,11 +12,11 @@
     "url": "#pricing"
   },
   {
-    "label": "Testimonials",
-    "url": "#testimonials"
-  },
-  {
     "label": "FAQs",
     "url": "#faq"
+  },
+  {
+    "label": "Testimonials",
+    "url": "#testimonials"
   }
 ]

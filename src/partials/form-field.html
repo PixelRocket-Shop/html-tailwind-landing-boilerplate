@@ -1,0 +1,25 @@
+{{#if isTextarea}}
+<div class="lg:col-span-2 grid gap-2">
+  <label for="{{ name }}" class="sr-only">{{label}}</label>
+  <textarea
+    class="border rounded-lg px-4 py-3 focus:outline-none focus:border-gray-600"
+    id="{{ name }}"
+    name="{{ name }}"
+    rows="{{ rows }}"
+    required
+    placeholder="{{ placeholder }}"
+  ></textarea>
+</div>
+{{else}}
+<div class="grid gap-2">
+  <label for="{{ name }}" class="sr-only">{{label}}</label>
+  <input
+    class="border rounded-lg px-4 py-3 focus:outline-none focus:border-gray-600"
+    type="text"
+    id="{{ name }}"
+    name="{{ name }}"
+    required
+    placeholder="{{ placeholder }}"
+  />
+</div>
+{{/if}}

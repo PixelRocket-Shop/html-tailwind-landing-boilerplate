@@ -1,10 +1,20 @@
-<section
-  id="testimonials"
-  aria-labelledby="testimonials-title"
-  class="scroll-mt-10 border-b"
->
-  <div class="container">
-    {{> section-title id="testimonials-title" title="Testimonials" }}
-    Here goes testimonials content
+<div class="text-center grid place-items-center gap-20">
+  <div class="grid gap-3">
+    {{> subtitle text="Success Stories"}}
+    <div class="max-w-lg">{{> title text="Why brands choose us"}}</div>
   </div>
-</section>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    {{#each @root.testimonials}}
+    <article
+      class="flex flex-col gap-8 place-items-start text-left bg-gray-50 rounded-xl p-8"
+    >
+      <p class="!m-0 text-2xl font-medium">"{{ quote }}"</p>
+      <div class="grid mt-auto">
+        <img src="{{ logo }}" alt="" class="!mt-0 !mb-3 w-8" />
+        <p class="!m-0 font-bold">{{ name }}</p>
+        <p class="!m-0">{{ company }}</p>
+      </div>
+    </article>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "/images/feature-1.svg",
+    "title": "Strategic Campaign Planning",
+    "description": "We design data-backed marketing plans that align with your business goals and drive measurable growth."
+  },
+  {
+    "icon": "/images/feature-2.svg",
+    "title": "Brand Identity Development",
+    "description": "From logos to messaging, we craft memorable brand identities that connect with your audience and stand out."
+  },
+  {
+    "icon": "/images/feature-3.svg",
+    "title": "Multi-Channel Advertising",
+    "description": "Reach your customers wherever they are with integrated campaigns across social media, search, and beyond."
+  },
+  {
+    "icon": "/images/feature-4.svg",
+    "title": "Content Creation & Copywriting",
+    "description": "Engage your audience with high-quality content, from blog posts to ad copy, tailored to your brand’s voice."
+  },
+  {
+    "icon": "/images/feature-5.svg",
+    "title": "SEO & Website Optimization",
+    "description": "Improve your visibility online with expert SEO strategies and optimized landing pages that convert visitors into customers."
+  },
+  {
+    "icon": "/images/feature-6.svg",
+    "title": "Analytics & Performance Tracking",
+    "description": "Monitor every campaign with real-time analytics and clear reporting, so you can see exactly what’s working."
+  }
+]

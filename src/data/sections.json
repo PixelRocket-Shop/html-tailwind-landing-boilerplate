@@ -1,0 +1,31 @@
+[
+  {
+    "id": "hero",
+    "partial": "section-hero",
+    "section-classes": "pt-16 lg:pt-32"
+  },
+  {
+    "id": "about",
+    "partial": "section-about"
+  },
+  {
+    "id": "features",
+    "partial": "section-features"
+  },
+  {
+    "id": "pricing",
+    "partial": "section-pricing"
+  },
+  {
+    "id": "faq",
+    "partial": "section-faq"
+  },
+  {
+    "id": "testimonials",
+    "partial": "section-testimonials"
+  },
+  {
+    "id": "contact",
+    "partial": "section-contact"
+  }
+]

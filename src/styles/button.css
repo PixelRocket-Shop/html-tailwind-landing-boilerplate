@@ -1,5 +1,5 @@
 .btn {
-  @apply px-6 py-4 text-white rounded-full bg-gray-950 border-2 border-transparent font-semibold transition-all hover:bg-white hover:text-gray-950 hover:border-gray-950 duration-300 no-underline cursor-pointer;
+  @apply px-6 py-4 text-white rounded-full bg-gray-950 border-2 border-transparent font-semibold transition-all hover:bg-transparent hover:text-gray-950 hover:border-gray-950 duration-300 no-underline cursor-pointer;
 }
 
 .btn-light {

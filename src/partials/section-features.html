@@ -1,10 +1,19 @@
-<section
-  id="features"
-  aria-labelledby="features-title"
-  class="scroll-mt-10 border-b"
->
-  <div class="container">
-    {{> section-title id="features-title" title="Our Features" }}
-    Here goes features content
+<div class="text-center grid place-items-center gap-20">
+  <div class="grid gap-3">
+    {{> subtitle text="What We Offer"}}
+    <div class="max-w-2xl">
+      {{> title text="Transforming vision into impactful campaigns"}}
+    </div>
   </div>
-</section>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+    {{#each @root.features}}
+    <article class="flex gap-6 place-items-start text-left">
+      <img src="{{ icon }}" alt="" class="!m-0" />
+      <div class="grid gap-2">
+        <h3 class="!m-0">{{ title }}</h3>
+        <p class="!m-0">{{ description }}</p>
+      </div>
+    </article>
+    {{/each}}
+  </div>
+</div>

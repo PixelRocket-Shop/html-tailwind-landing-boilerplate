@@ -1,10 +1,52 @@
-<section
-  id="contact"
-  aria-labelledby="contact-title"
-  class="scroll-mt-10 border-b"
->
-  <div class="container">
-    {{> section-title id="contact-title" title="Contact Us" }}
-    Here goes contact content
+<div class="text-center grid place-items-center gap-12">
+  <div class="grid gap-3">
+    {{> subtitle text="Send us a message"}}
+    <div class="max-w-2xl">{{> title text="Let's connect"}}</div>
+    <p class="max-w-md !m-0">
+      Send us a message through our contact form and a member of our team will
+      respond with 24 hours.
+    </p>
   </div>
-</section>
+  <form
+    action="ENTER_YOUR_FORMSPREE_URL_HERE"
+    method="POST"
+    id="contact-form"
+    class="grid gap-x-6 gap-y-8 lg:grid-cols-2 w-full md:w-md lg:w-lg"
+  >
+    <!--prettier-ignore-->
+    {{> form-field
+        name="first_name"
+        label="First name"
+        placeholder="First name"
+    }}
+    {{> form-field
+        name="last_name"
+        label="Last name"
+        placeholder="Last name"
+    }}
+    {{> form-field
+        name="email"
+        label="Email"
+        placeholder="Email"
+    }}
+    {{> form-field
+        name="company"
+        label="Company"
+        placeholder="Company"
+    }}
+    {{> form-field 
+        id="message" 
+        name="message" 
+        label="Message"
+        isTextarea=true 
+        placeholder="Tell us about your brand" 
+    }}
+    <button type="submit" class="btn lg:col-span-2">Send Message</button>
+    <p
+      id="form-response"
+      class="mt-4 bg-green-600 text-white/95 p-3 rounded-lg w-full lg:col-span-2 hidden"
+    >
+      Thanks for your message!
+    </p>
+  </form>
+</div>
