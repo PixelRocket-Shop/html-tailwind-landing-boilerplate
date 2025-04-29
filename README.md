@@ -15,7 +15,7 @@ This is a flexible and modern HTML boilerplate for single-page websites. It uses
 
 ## App Preview
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-brightgreen?style=for-the-badge)](https://youtube-html-tailwind-landing-boilerplate.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-brightgreen?style=for-the-badge)](https://html-tailwind-landing-boilerplate.vercel.app/)
 
 ---
 
