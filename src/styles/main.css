@@ -2,6 +2,8 @@
 @plugin "@tailwindcss/typography";
 /* This makes sure Tailwind picks up our partial styles */
 @source "../partials";
+/* This makes sure Tailwind picks up additional classes in src/data */
+@source "../src/data";
 
 /* Go here to tweak your Tailwind config */
 @import './tailwind-config';
@@ -13,4 +15,3 @@
 @import './button';
 @import './navbar';
 @import './mobile-menu';
-
