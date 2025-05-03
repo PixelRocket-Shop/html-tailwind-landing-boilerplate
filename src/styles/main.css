@@ -3,7 +3,7 @@
 /* This makes sure Tailwind picks up our partial styles */
 @source "../partials";
 /* This makes sure Tailwind picks up additional classes in src/data */
-@source "../src/data";
+@source "../data";
 
 /* Go here to tweak your Tailwind config */
 @import './tailwind-config';
