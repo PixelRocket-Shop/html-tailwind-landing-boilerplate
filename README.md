@@ -11,6 +11,17 @@ This is a flexible and modern HTML boilerplate for single-page websites. It uses
 - 📨 Contact form powered by Formspree
 - 🔁 Live reload on changes (including partials)
 
+## Here from my Youtube video? Here are the scripts I use:
+
+📂 Mac Users script to setup initial files:
+mkdir -p public src/data src/js src/pages src/partials/icons src/styles && touch src/pages/index.html src/partials/footer.html src/partials/form-field.html src/partials/head.html src/partials/header-navlink.html src/partials/header.html src/partials/logo.html src/partials/logocloud.html src/partials/mobile-menu.html src/partials/section-about.html src/partials/section-contact.html src/partials/section-faq.html src/partials/section-features.html src/partials/section-hero.html src/partials/section-pricing.html src/partials/section-testimonials.html src/partials/section-wrapper.html src/partials/subtitle.html src/partials/title.html src/styles/animations.css src/styles/button.css src/styles/main.css src/styles/mobile-menu.css src/styles/navbar.css src/styles/tailwind-config.css src/js/contact.js src/js/main.js src/js/mobile-menu.js
+
+📂 Windows users script to setup initial files:
+mkdir public && mkdir src && mkdir src\data && mkdir src\js && mkdir src\pages && mkdir src\partials && mkdir src\partials\icons && mkdir src\styles && type nul > src\pages\index.html && for %f in (footer form-field head header-navlink header logo logocloud mobile-menu section-about section-contact section-faq section-features section-hero section-pricing section-testimonials section-wrapper subtitle title) do type nul > src\partials\%f.html && for %f in (animations button main mobile-menu navbar tailwind-config) do type nul > src\styles\%f.css && for %f in (contact main mobile-menu) do type nul > src\js\%f.js
+
+📂 NPM Install scripts:
+npm install @tailwindcss/typography @tailwindcss/vite tailwindcss && npm install --save-dev prettier vite vite-plugin-handlebars
+
 ---
 
 ## App Preview
